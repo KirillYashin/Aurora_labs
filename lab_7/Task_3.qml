@@ -43,6 +43,12 @@ Page {
                         duration: 2000
                     }
                 }
+                RotationAnimation{
+                    duration: 1500
+                }
+                ColorAnimation {
+                    duration: 1500
+                }
             },
             Transition {
                 from: "anim"
@@ -54,6 +60,12 @@ Page {
                         to: 0
                         duration: 2000
                     }
+                }
+                RotationAnimation{
+                    duration: 1500
+                }
+                ColorAnimation {
+                    duration: 1500
                 }
             }
         ]

@@ -41,6 +41,7 @@
 #include <auroraapp.h>
 #include "Counter.h"
 #include "Dict.h"
+#include "polish.h"
 int main(int argc, char *argv[]) {
     {
      const QMetaObject meta = Counter::staticMetaObject;
@@ -57,6 +58,7 @@ int main(int argc, char *argv[]) {
     view->setSource(Aurora::Application::pathTo("qml/lab_8.qml"));
     qmlRegisterType<Counter>("custom.Counter", 1, 0, "Counter");
     qmlRegisterType<Dict>("custom.Dict", 1, 0, "Dict");
+    qmlRegisterType<Polish>("custom.Polish", 1, 0, "Polish");
     view->showFullScreen();
     return app->exec();
 }

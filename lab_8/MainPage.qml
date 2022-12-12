@@ -43,7 +43,7 @@ Page {
 
     Grid {
         columns: 1
-        rows: 2
+        rows: 3
         spacing: 20
         anchors.centerIn: page
 
@@ -57,6 +57,10 @@ Page {
             onClicked: pageStack.animatorPush(Qt.resolvedUrl("PageDictionary.qml"))
         }
 
+        Button {
+            text: qsTr("Польская запись")
+            onClicked: pageStack.animatorPush(Qt.resolvedUrl("PagePolish.qml"))
+        }
     }
 }
 
